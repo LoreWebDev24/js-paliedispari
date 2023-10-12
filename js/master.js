@@ -1,16 +1,17 @@
 // PARI E DISPARI 
 
+// SEZIONE DEI PROMPT E GENERAZIONE DEL NUMERO RANDOM
+
 let pariORDispari = prompt('Scegli fra pari o dispari')
 
-let userNumber = parseInt(prompt('Inserisci un numero:'))
+let userNumber = parseInt(prompt('Inserisci un numero da 1 a 5:'))
 
 let botNumber = Math.floor(Math.random() * 5);
 console.log(botNumber)
 
 let somma = userNumber + botNumber 
 
-
-
+// FUNZIONE CHE CONTROLLA SE UN NUMERO E' PARI'
 
 function checkPari(somma) {
     let isPari = true
@@ -22,6 +23,8 @@ function checkPari(somma) {
 }
 
 let checked = checkPari(somma)
+
+// SEZIONE CHE DECIDE ED ALLERTA SE L'UTENTE HA VINTO
 
 if (checked == true && pariORDispari == 'pari') {
     alert ('Hai vinto')
