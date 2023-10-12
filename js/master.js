@@ -13,7 +13,7 @@ let somma = userNumber + botNumber
 
 
 function checkPari(somma) {
-    let isPari 
+    let isPari = true
     if (somma % 2 != 0 ) {
         isPari = false
     } 
