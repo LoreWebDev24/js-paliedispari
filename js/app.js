@@ -29,4 +29,3 @@ else {
     alert('Non Palindromo')
 }    
 
-alertPalindromo(userWord);
