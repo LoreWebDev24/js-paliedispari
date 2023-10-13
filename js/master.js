@@ -13,7 +13,7 @@ let somma = userNumber + botNumber
 
 // FUNZIONE CHE CONTROLLA SE UN NUMERO E' PARI'
 
-function checkPari(somma) {
+function checkPari(somma,isPari) {
     let isPari = true
     if (somma % 2 != 0 ) {
         isPari = false
@@ -22,7 +22,7 @@ function checkPari(somma) {
     return isPari 
 }
 
-let checked = checkPari(somma)
+let checked = checkPari(somma,isPari)
 
 // SEZIONE CHE DECIDE ED ALLERTA SE L'UTENTE HA VINTO
 
